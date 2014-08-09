@@ -14,5 +14,6 @@
                                    :output-dir "resources/public/js"
                                    :optimizations :none
                                    :source-maps true
-                                   :pretty-print true}}]}
+                                   :pretty-print true}}]
+              :crossovers [gol.core]}
   :ring {:handler gol.handler/app})
