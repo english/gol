@@ -1,6 +1,7 @@
 (ns gol.core-test
-  (:require [clojure.test :refer :all]
-            [gol.core :refer :all]))
+  (:require-macros [cemerick.cljs.test :refer (is deftest testing)])
+  (:require [cemerick.cljs.test :as t]
+            [gol.core :refer [tick]]))
 
 (deftest game-of-life
   (testing "Any live cell with fewer than two live neighbours dies"
